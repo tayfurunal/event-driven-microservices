@@ -3,15 +3,14 @@ package com.tayfurunal.productservice.interceptor;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.MDC;
 import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 
-import static com.tayfurunal.productservice.configuration.MDCConstants.X_AGENT_NAME;
-import static com.tayfurunal.productservice.configuration.MDCConstants.X_AGENT_USER;
-import static com.tayfurunal.productservice.configuration.MDCConstants.X_CORRELATION_ID;
+import static com.tayfurunal.productservice.configuration.MdcConstants.X_AGENT_NAME;
+import static com.tayfurunal.productservice.configuration.MdcConstants.X_AGENT_USER;
+import static com.tayfurunal.productservice.configuration.MdcConstants.X_CORRELATION_ID;
 
 
 public class RequestHeaderAttributesHandlerInterceptor implements HandlerInterceptor {

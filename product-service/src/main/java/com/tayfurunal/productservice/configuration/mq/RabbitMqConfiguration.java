@@ -16,18 +16,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.retry.interceptor.RetryOperationsInterceptor;
 
-import static com.tayfurunal.productservice.configuration.mq.RabbitMQMDC.MESSAGE_POST_PROCESSOR;
-import static com.tayfurunal.productservice.configuration.mq.RabbitMQMDC.METHOD_INTERCEPTOR;
+import static com.tayfurunal.productservice.configuration.mq.RabbitMqMdc.MESSAGE_POST_PROCESSOR;
+import static com.tayfurunal.productservice.configuration.mq.RabbitMqMdc.METHOD_INTERCEPTOR;
 
 @Configuration
-public class RabbitMQConfiguration {
+public class RabbitMqConfiguration {
 
     private final RabbitProperties rabbitProperties;
 
     @Value("${spring.application.name}")
     private String applicationName;
 
-    public RabbitMQConfiguration(RabbitProperties rabbitProperties) {
+    public RabbitMqConfiguration(RabbitProperties rabbitProperties) {
         this.rabbitProperties = rabbitProperties;
     }
 

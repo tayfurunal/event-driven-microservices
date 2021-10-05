@@ -21,9 +21,9 @@ import java.util.Locale;
 import java.util.stream.Collectors;
 
 @Slf4j
+@ControllerAdvice
 @RestControllerAdvice
 @RequiredArgsConstructor
-@ControllerAdvice
 public class GlobalControllerExceptionHandler {
 
     private static final Locale EN = new Locale("en");

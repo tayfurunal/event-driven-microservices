@@ -8,16 +8,16 @@ import org.springframework.amqp.core.MessageProperties;
 
 import java.util.UUID;
 
-import static com.tayfurunal.productservice.configuration.MDCConstants.UNKNOWN_APPLICATION;
-import static com.tayfurunal.productservice.configuration.MDCConstants.X_AGENT_NAME;
-import static com.tayfurunal.productservice.configuration.MDCConstants.X_AGENT_USER;
-import static com.tayfurunal.productservice.configuration.MDCConstants.X_CORRELATION_ID;
+import static com.tayfurunal.productservice.configuration.MdcConstants.UNKNOWN_APPLICATION;
+import static com.tayfurunal.productservice.configuration.MdcConstants.X_AGENT_NAME;
+import static com.tayfurunal.productservice.configuration.MdcConstants.X_AGENT_USER;
+import static com.tayfurunal.productservice.configuration.MdcConstants.X_CORRELATION_ID;
 import static java.util.Objects.isNull;
 import static org.apache.commons.lang3.StringUtils.EMPTY;
 import static org.apache.commons.lang3.StringUtils.isBlank;
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
 
-public interface RabbitMQMDC {
+public interface RabbitMqMdc {
 
     String SYSTEM_USER_ID = "-1";
 
