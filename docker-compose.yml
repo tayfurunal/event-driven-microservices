@@ -1,0 +1,28 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
+
+  basket-service:
+    image: tayfurunal/basket-service
+    restart: always
+    environment:
+      RABBIT_HOST: rabbitmq
+    ports:
+      - 8089:8089
+    depends_on:
+      - rabbitmq
+
+  product-service:
+    image: tayfurunal/product-service
+    restart: always
+    environment:
+      RABBIT_HOST: rabbitmq
+    ports:
+      - 8087:8087
+    depends_on:
+      - rabbitmq
