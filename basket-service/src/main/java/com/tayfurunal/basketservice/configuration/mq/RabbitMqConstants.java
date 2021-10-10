@@ -1,4 +1,4 @@
-package com.tayfurunal.productservice.configuration.mq;
+package com.tayfurunal.basketservice.configuration.mq;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

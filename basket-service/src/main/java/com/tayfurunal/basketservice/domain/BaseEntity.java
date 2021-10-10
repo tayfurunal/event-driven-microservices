@@ -1,4 +1,4 @@
-package com.tayfurunal.productservice.domain;
+package com.tayfurunal.basketservice.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

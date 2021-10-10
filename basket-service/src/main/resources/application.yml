@@ -24,3 +24,4 @@ spring:
         retry:
           max-attempts: 3
           enabled: true
+    virtual-host: /
