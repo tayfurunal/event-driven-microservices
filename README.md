@@ -21,6 +21,6 @@ $ docker-compose up
 
 ## Images
 ### Architecture
-![image](https://i.hizliresim.com/g9e28dr.png)
+![image](https://i.imgur.com/a9i90jD.png)
 ### MDC Properties
-![image](https://i.hizliresim.com/affrvhb.png)
+![image](https://i.imgur.com/Psc4mxv.png)
